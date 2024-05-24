@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Average</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #average {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Average</h1>
+        <form id="gradesForm">
+            <input type="number" id="grade1" name="grade1" placeholder="Subject 1" required><br>
+            <input type="number" id="grade2" name="grade2" placeholder="Subject 2" required><br>
+            <input type="number" id="grade3" name="grade3" placeholder="Subject 3" required><br>
+            <input type="number" id="grade4" name="grade4" placeholder="Subject 4" required><br>
+            <input type="number" id="grade5" name="grade5" placeholder="Subject 5" required><br>
+            <button type="button" onclick="calculateAverage()">Calculate Average</button>
+        </form>
+        <div id="average"></div>
+    </div>
+    
+    <script src="Script .js"></script>
+</body>
+</html>
